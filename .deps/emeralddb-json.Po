@@ -1,8 +1,8 @@
-emeralddb-json.o: bson/src/util/json.cpp \
+emeralddb-json.o: bson/src/util/json.cpp ../boost/boost/version.hpp \
  ../boost/boost/spirit/include/classic_core.hpp \
  ../boost/boost/spirit/home/classic/core.hpp \
  ../boost/boost/spirit/home/classic/version.hpp \
- ../boost/boost/version.hpp ../boost/boost/spirit/home/classic/debug.hpp \
+ ../boost/boost/spirit/home/classic/debug.hpp \
  ../boost/boost/spirit/home/classic/debug/minimal.hpp \
  ../boost/boost/spirit/home/classic/core/config.hpp \
  ../boost/boost/config.hpp ../boost/boost/config/user.hpp \
@@ -890,13 +890,13 @@ emeralddb-json.o: bson/src/util/json.cpp \
  bson/src/lib/base64.h ../boost/boost/scoped_array.hpp \
  ../boost/boost/smart_ptr/scoped_array.hpp
 
+../boost/boost/version.hpp:
+
 ../boost/boost/spirit/include/classic_core.hpp:
 
 ../boost/boost/spirit/home/classic/core.hpp:
 
 ../boost/boost/spirit/home/classic/version.hpp:
-
-../boost/boost/version.hpp:
 
 ../boost/boost/spirit/home/classic/debug.hpp:
 

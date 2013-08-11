@@ -13,30 +13,21 @@
    You should have received a copy of the GNU Affero General Public License
    along with this program. If not, see <http://www.gnu.org/license/>.
 *******************************************************************************/
-#ifndef _EDB_HPP_
-#define _EDB_HPP_
+#include "pmd.hpp"
+#include "pmdOptions.hpp"
+#include "pd.hpp"
 
-#include "core.hpp"
-#include "ossSocket.hpp"
-#include "commandFactory.hpp"
-const int   CMD_BUFFER_SIZE      =  512;
-class Edb {
-public:
-   Edb(){}
-   ~Edb(){};
-public:
-   void     start(void);
-protected:
-   void     prompt(void);
-private:
-   void     split(const std::string &text, char delim, std::vector<std::string> &result);
-   char*    readLine(char *p, int length);
-   int      readInput(const char *pPrompt, int numIndent);
-private:
-   ossSocket      _sock;
-   CommandFactory _cmdFactory;
-   char           _cmdBuffer[CMD_BUFFER_SIZE];
-};
+EDB_KRCB pmd_krcb ;
+extern char _pdDiagLogPath [ OSS_MAX_PATHSIZE+1 ] ;
+int EDB_KRCB::init ( pmdOptions *options )
+{
+   setDBStatus ( EDB_DB_NORMAL ) ;
+   setDataFilePath ( options->getDBPath () ) ;
+   setLogFilePath ( options->getLogPath () ) ;
+   strncpy ( _pdDiagLogPath, getLogFilePath(), sizeof(_pdDiagLogPath) ) ;
+   setSvcName ( options->getServiceName () ) ;
+   setMaxPool ( options->getMaxPool () ) ;
+   //return _rtnMgr.rtnInitialize() ;
+   return EDB_OK ;
+}
 
-
-#endif

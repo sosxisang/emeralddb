@@ -15,9 +15,9 @@
 *******************************************************************************/
 #ifndef _COMMAND_HPP_
 #define _COMMAND_HPP_
-#include <vector>
-#include <bson/src/util/json.h>
 
+#include "core.hpp"
+#include <bson/src/util/json.h>
 #include "ossSocket.hpp"
 #define COMMAND_QUIT         "quit"
 #define COMMAND_INSERT       "insert"
@@ -65,6 +65,14 @@ class ICommand
       std::string _jsonString;
 };
 
+class InsertCommand : public ICommand
+{
+   public:
+      int   execute( ossSocket & sock, std::vector<std::string> & argVec );
+   protected:
+      int   handleReply();
+};
+
 class ConnectCommand : public ICommand
 {
    public:
@@ -89,4 +97,3 @@ class HelpCommand : public ICommand
 };
 
 #endif
-

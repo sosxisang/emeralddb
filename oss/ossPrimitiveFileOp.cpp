@@ -82,33 +82,17 @@ void ossPrimitiveFileOp::openStdout()
    setFileHandle(STDOUT_FILENO) ;
    _bIsStdout = true ;
 }
-/*
-ossPrimitiveFileOp::offsetType ossPrimitiveFileOp::getCurrentOffset () const
-{
-   offsetType returnValue ;
-   returnValue.offset = oss_lseek( _fileHandle, 0, SEEK_CUR ) ;
-   return returnValue ;
-}
-*/
+
 offsetType ossPrimitiveFileOp::getCurrentOffset () const
 {
   return oss_lseek( _fileHandle, 0, SEEK_CUR ) ;
 }
 
-
 void ossPrimitiveFileOp::seekToEnd( void )
 {
    oss_lseek( _fileHandle, 0, SEEK_END ) ;
 }
-/*
-void ossPrimitiveFileOp::seekToOffset( ossPrimitiveFileOp::offsetType param )
-{
-   if ( ( oss_off_t )-1 != param.offset )
-   {
-      oss_lseek( _fileHandle, param.offset, SEEK_SET ) ;
-   }
-}
-*/
+
 void ossPrimitiveFileOp::seekToOffset( offsetType offset )
 {
    if ( ( oss_off_t )-1 != offset )
@@ -116,7 +100,6 @@ void ossPrimitiveFileOp::seekToOffset( offsetType offset )
       oss_lseek( _fileHandle, offset, SEEK_SET ) ;
    }
 }
-
 
 int ossPrimitiveFileOp::Read ( const size_t size,
                                void * const pBuffer,
@@ -203,28 +186,6 @@ void ossPrimitiveFileOp::setFileHandle( handleType handle )
    _fileHandle = handle ;
 }
 
-/*
-int ossPrimitiveFileOp::getSize( offsetType * const pFileSize )
-{
-   int             rc        = 0 ;
-   oss_struct_stat buf       = { 0 } ;
-
-   if ( -1 == oss_fstat( _fileHandle, &buf ) )
-   {
-      rc = errno ;
-      goto err_exit ;
-   }
-
-   pFileSize->offset = buf.st_size ;
-
-exit :
-   return rc ;
-
-err_exit :
-   pFileSize->offset = 0 ;
-   goto exit ;
-}
-*/
 int ossPrimitiveFileOp::getSize( offsetType * const pFileSize )
 {
    int             rc        = 0 ;
@@ -245,15 +206,4 @@ err_exit :
    *pFileSize = 0 ;
    goto exit ;
 }
-
-
-
-
-
-
-
-
-
-
-
 

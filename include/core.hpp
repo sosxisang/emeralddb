@@ -16,19 +16,18 @@
 #ifndef CORE_HPP__
 #define CORE_HPP__
 
+#ifdef _WINDOWS
+
+#include "wininc.h"
+
+#else
+
 #include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include <linux/limits.h>
 #include <sys/time.h>
-#include <time.h>
-#include <stdarg.h>
-#include <unistd.h>
 #include <syscall.h>
 #include <fcntl.h>
 #include <sys/stat.h>
-#include <errno.h>
 #include <signal.h>
 #include <sys/types.h>
 #include <sys/socket.h>
@@ -37,6 +36,17 @@
 #include <netdb.h>
 #include <netinet/tcp.h>
 #include <sys/mman.h>
+#include <pthread.h>
+
+#endif // _WINDOWS
+
+#include <errno.h>
+
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <ctime>
+#include <cstdarg>
 
 #include <string>
 #include <map>
@@ -45,7 +55,11 @@
 #include <iostream>
 
 #define OSS_MAX_PATHSIZE  PATH_MAX
+#if defined _WINDOWS
+#define OSS_FILE_SEP_STR  "\\"
+#else
 #define OSS_FILE_SEP_STR  "/"
+#endif
 #define OSS_FILE_SEP_CHAR *((const char*)OSS_FILE_SEP_STR)[0]
 #define OSS_NEWLINE       "\n"
 // error code list

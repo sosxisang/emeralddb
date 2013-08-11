@@ -15,8 +15,8 @@
 *******************************************************************************/
 #include <iostream>
 #include <sstream>
-#include "edb.hpp"
 #include "core.hpp"
+#include "edb.hpp"
 #include "command.hpp"
 
 const char    SPACE             =  ' ';
@@ -25,7 +25,6 @@ const char    BACK_SLANT        =  '\\';
 const char    NEW_LINE          =   '\n';
 
 int gQuit = 0;
-
 
 void Edb::start(void)
 {
@@ -36,6 +35,7 @@ void Edb::start(void)
       prompt();
    }
 }
+
 void Edb::prompt(void)
 {
    int ret = EDB_OK;
@@ -132,7 +132,6 @@ char *Edb::readLine(char *p, int length)
    p[len] = 0;
    return p;
 }
-
 void Edb::split(const std::string &text, char delim, std::vector<std::string> &result)
 {
    size_t strLen = text.length();

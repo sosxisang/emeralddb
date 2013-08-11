@@ -10,36 +10,25 @@ edb-command.o: client/command.cpp include/core.hpp /usr/include/unistd.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stddef.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
- /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
- /usr/include/wchar.h /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdarg.h \
- /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/x86_64-linux-gnu/bits/sys_errlist.h /usr/include/stdlib.h \
- /usr/include/x86_64-linux-gnu/bits/waitflags.h \
- /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/endian.h \
- /usr/include/x86_64-linux-gnu/bits/endian.h \
- /usr/include/x86_64-linux-gnu/bits/byteswap.h /usr/include/xlocale.h \
- /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/linux/limits.h /usr/include/x86_64-linux-gnu/sys/time.h \
+ /usr/include/time.h /usr/include/x86_64-linux-gnu/bits/time.h \
  /usr/include/x86_64-linux-gnu/sys/select.h \
  /usr/include/x86_64-linux-gnu/bits/select.h \
- /usr/include/x86_64-linux-gnu/bits/sigset.h \
- /usr/include/x86_64-linux-gnu/bits/time.h \
- /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h /usr/include/alloca.h \
- /usr/include/string.h /usr/include/linux/limits.h \
- /usr/include/x86_64-linux-gnu/sys/time.h \
- /usr/include/x86_64-linux-gnu/bits/timex.h /usr/include/syscall.h \
+ /usr/include/x86_64-linux-gnu/bits/sigset.h /usr/include/syscall.h \
  /usr/include/x86_64-linux-gnu/sys/syscall.h \
  /usr/include/x86_64-linux-gnu/asm/unistd.h \
  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
  /usr/include/x86_64-linux-gnu/bits/syscall.h /usr/include/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl.h \
+ /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+ /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
  /usr/include/x86_64-linux-gnu/bits/uio.h \
  /usr/include/x86_64-linux-gnu/bits/stat.h \
- /usr/include/x86_64-linux-gnu/sys/stat.h /usr/include/errno.h \
- /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
- /usr/include/x86_64-linux-gnu/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/include/signal.h /usr/include/x86_64-linux-gnu/bits/signum.h \
+ /usr/include/x86_64-linux-gnu/sys/stat.h /usr/include/signal.h \
+ /usr/include/x86_64-linux-gnu/bits/signum.h \
  /usr/include/x86_64-linux-gnu/bits/siginfo.h \
  /usr/include/x86_64-linux-gnu/bits/sigaction.h \
  /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
@@ -60,11 +49,27 @@ edb-command.o: client/command.cpp include/core.hpp /usr/include/unistd.h \
  /usr/include/netdb.h /usr/include/rpc/netdb.h \
  /usr/include/x86_64-linux-gnu/bits/netdb.h /usr/include/netinet/tcp.h \
  /usr/include/x86_64-linux-gnu/sys/mman.h \
- /usr/include/x86_64-linux-gnu/bits/mman.h /usr/include/c++/4.6/string \
+ /usr/include/x86_64-linux-gnu/bits/mman.h /usr/include/pthread.h \
+ /usr/include/sched.h /usr/include/x86_64-linux-gnu/bits/sched.h \
+ /usr/include/x86_64-linux-gnu/bits/timex.h /usr/include/xlocale.h \
+ /usr/include/x86_64-linux-gnu/bits/setjmp.h /usr/include/errno.h \
+ /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/c++/4.6/cstdio \
  /usr/include/c++/4.6/x86_64-linux-gnu/./bits/c++config.h \
  /usr/include/c++/4.6/x86_64-linux-gnu/./bits/os_defines.h \
  /usr/include/c++/4.6/x86_64-linux-gnu/./bits/cpu_defines.h \
- /usr/include/c++/4.6/bits/stringfwd.h \
+ /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
+ /usr/include/wchar.h /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdarg.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+ /usr/include/c++/4.6/cstdlib /usr/include/stdlib.h \
+ /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/alloca.h \
+ /usr/include/c++/4.6/cstring /usr/include/string.h \
+ /usr/include/c++/4.6/ctime /usr/include/c++/4.6/cstdarg \
+ /usr/include/c++/4.6/string /usr/include/c++/4.6/bits/stringfwd.h \
  /usr/include/c++/4.6/bits/char_traits.h \
  /usr/include/c++/4.6/bits/stl_algobase.h \
  /usr/include/c++/4.6/bits/functexcept.h \
@@ -95,9 +100,6 @@ edb-command.o: client/command.cpp include/core.hpp /usr/include/unistd.h \
  /usr/include/c++/4.6/ext/atomicity.h \
  /usr/include/c++/4.6/x86_64-linux-gnu/./bits/gthr.h \
  /usr/include/c++/4.6/x86_64-linux-gnu/./bits/gthr-default.h \
- /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/x86_64-linux-gnu/bits/sched.h \
- /usr/include/x86_64-linux-gnu/bits/setjmp.h \
  /usr/include/c++/4.6/x86_64-linux-gnu/./bits/atomic_word.h \
  /usr/include/c++/4.6/initializer_list \
  /usr/include/c++/4.6/bits/basic_string.tcc /usr/include/c++/4.6/map \
@@ -126,8 +128,8 @@ edb-command.o: client/command.cpp include/core.hpp /usr/include/unistd.h \
  /usr/include/c++/4.6/bits/ostream.tcc /usr/include/c++/4.6/istream \
  /usr/include/c++/4.6/bits/istream.tcc client/command.hpp \
  bson/src/util/json.h bson/src/util/../bson.h \
- bson/src/util/../bsonassert.h /usr/include/c++/4.6/cstdlib \
- /usr/include/c++/4.6/memory /usr/include/c++/4.6/bits/stl_tempbuf.h \
+ bson/src/util/../bsonassert.h /usr/include/c++/4.6/memory \
+ /usr/include/c++/4.6/bits/stl_tempbuf.h \
  /usr/include/c++/4.6/bits/stl_raw_storage_iter.h \
  /usr/include/c++/4.6/backward/auto_ptr.h /usr/include/c++/4.6/sstream \
  /usr/include/c++/4.6/bits/sstream.tcc ../boost/boost/utility.hpp \
@@ -249,8 +251,7 @@ edb-command.o: client/command.cpp include/core.hpp /usr/include/unistd.h \
  /usr/include/c++/4.6/iterator \
  /usr/include/c++/4.6/bits/stream_iterator.h \
  ../boost/boost/noncopyable.hpp bson/src/util/../stringdata.h \
- /usr/include/c++/4.6/cstring bson/src/util/../bsontypes.h \
- bson/src/util/../util/misc.h /usr/include/c++/4.6/ctime \
+ bson/src/util/../bsontypes.h bson/src/util/../util/misc.h \
  bson/src/util/../oid.h bson/src/util/../util/hex.h \
  bson/src/util/../util/builder.h bson/src/util/../util/../inline_decls.h \
  bson/src/util/../bsonelement.h bson/src/util/../util/optime.h \
@@ -275,7 +276,6 @@ edb-command.o: client/command.cpp include/core.hpp /usr/include/unistd.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  bson/src/util/../bsonobjiterator.h bson/src/util/../bson-inl.h \
  bson/src/util/../bson_db.h bson/src/util/../util/time_support.h \
- /usr/include/c++/4.6/cstdio \
  ../boost/boost/date_time/posix_time/posix_time.hpp \
  ../boost/boost/date_time/compiler_config.hpp \
  ../boost/boost/date_time/locale_config.hpp ../boost/boost/cstdint.hpp \
@@ -749,7 +749,7 @@ edb-command.o: client/command.cpp include/core.hpp /usr/include/unistd.h \
  ../boost/boost/thread/thread_time.hpp \
  ../boost/boost/config/abi_prefix.hpp \
  ../boost/boost/config/abi_suffix.hpp include/ossSocket.hpp \
- include/core.hpp client/commandFactory.hpp
+ include/core.hpp client/commandFactory.hpp include/pd.hpp
 
 include/core.hpp:
 
@@ -781,59 +781,19 @@ include/core.hpp:
 
 /usr/include/getopt.h:
 
-/usr/include/stdio.h:
+/usr/include/linux/limits.h:
 
-/usr/include/libio.h:
-
-/usr/include/_G_config.h:
-
-/usr/include/wchar.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdarg.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
-
-/usr/include/stdlib.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/endian.h:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-/usr/include/xlocale.h:
-
-/usr/include/x86_64-linux-gnu/sys/types.h:
+/usr/include/x86_64-linux-gnu/sys/time.h:
 
 /usr/include/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
 /usr/include/x86_64-linux-gnu/bits/sigset.h:
-
-/usr/include/x86_64-linux-gnu/bits/time.h:
-
-/usr/include/x86_64-linux-gnu/sys/sysmacros.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
-
-/usr/include/alloca.h:
-
-/usr/include/string.h:
-
-/usr/include/linux/limits.h:
-
-/usr/include/x86_64-linux-gnu/sys/time.h:
-
-/usr/include/x86_64-linux-gnu/bits/timex.h:
 
 /usr/include/syscall.h:
 
@@ -849,23 +809,23 @@ include/core.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/fcntl.h:
 
+/usr/include/x86_64-linux-gnu/sys/types.h:
+
+/usr/include/endian.h:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/x86_64-linux-gnu/sys/sysmacros.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
 /usr/include/x86_64-linux-gnu/bits/uio.h:
 
 /usr/include/x86_64-linux-gnu/bits/stat.h:
 
 /usr/include/x86_64-linux-gnu/sys/stat.h:
-
-/usr/include/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/errno.h:
-
-/usr/include/linux/errno.h:
-
-/usr/include/x86_64-linux-gnu/asm/errno.h:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/asm-generic/errno-base.h:
 
 /usr/include/signal.h:
 
@@ -923,13 +883,71 @@ include/core.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/mman.h:
 
-/usr/include/c++/4.6/string:
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/include/x86_64-linux-gnu/bits/timex.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/usr/include/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/errno.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/c++/4.6/cstdio:
 
 /usr/include/c++/4.6/x86_64-linux-gnu/./bits/c++config.h:
 
 /usr/include/c++/4.6/x86_64-linux-gnu/./bits/os_defines.h:
 
 /usr/include/c++/4.6/x86_64-linux-gnu/./bits/cpu_defines.h:
+
+/usr/include/stdio.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdarg.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
+
+/usr/include/c++/4.6/cstdlib:
+
+/usr/include/stdlib.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/usr/include/alloca.h:
+
+/usr/include/c++/4.6/cstring:
+
+/usr/include/string.h:
+
+/usr/include/c++/4.6/ctime:
+
+/usr/include/c++/4.6/cstdarg:
+
+/usr/include/c++/4.6/string:
 
 /usr/include/c++/4.6/bits/stringfwd.h:
 
@@ -1008,14 +1026,6 @@ include/core.hpp:
 /usr/include/c++/4.6/x86_64-linux-gnu/./bits/gthr.h:
 
 /usr/include/c++/4.6/x86_64-linux-gnu/./bits/gthr-default.h:
-
-/usr/include/pthread.h:
-
-/usr/include/sched.h:
-
-/usr/include/x86_64-linux-gnu/bits/sched.h:
-
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
 /usr/include/c++/4.6/x86_64-linux-gnu/./bits/atomic_word.h:
 
@@ -1096,8 +1106,6 @@ bson/src/util/json.h:
 bson/src/util/../bson.h:
 
 bson/src/util/../bsonassert.h:
-
-/usr/include/c++/4.6/cstdlib:
 
 /usr/include/c++/4.6/memory:
 
@@ -1367,13 +1375,9 @@ bson/src/util/../bsonassert.h:
 
 bson/src/util/../stringdata.h:
 
-/usr/include/c++/4.6/cstring:
-
 bson/src/util/../bsontypes.h:
 
 bson/src/util/../util/misc.h:
-
-/usr/include/c++/4.6/ctime:
 
 bson/src/util/../oid.h:
 
@@ -1448,8 +1452,6 @@ bson/src/util/../bson-inl.h:
 bson/src/util/../bson_db.h:
 
 bson/src/util/../util/time_support.h:
-
-/usr/include/c++/4.6/cstdio:
 
 ../boost/boost/date_time/posix_time/posix_time.hpp:
 
@@ -2558,3 +2560,5 @@ include/ossSocket.hpp:
 include/core.hpp:
 
 client/commandFactory.hpp:
+
+include/pd.hpp:

@@ -15,9 +15,8 @@
 *******************************************************************************/
 #ifndef _COMMAND_FACTORY_HPP_
 #define _COMMAND_FACTORY_HPP_
+
 #include "command.hpp"
-
-
 #define COMMAND_BEGIN void CommandFactory::addCommand() {
 #define COMMAND_END }
 #define COMMAND_ADD(cmdName,cmdClass) {                         \
@@ -38,4 +37,3 @@ class CommandFactory {
 };
 
 #endif
-

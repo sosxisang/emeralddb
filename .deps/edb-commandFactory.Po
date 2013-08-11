@@ -1,14 +1,78 @@
 edb-commandFactory.o: client/commandFactory.cpp client/commandFactory.hpp \
- client/command.hpp /usr/include/c++/4.6/vector \
- /usr/include/c++/4.6/bits/stl_algobase.h \
- /usr/include/c++/4.6/x86_64-linux-gnu/./bits/c++config.h \
- /usr/include/c++/4.6/x86_64-linux-gnu/./bits/os_defines.h \
+ client/command.hpp include/core.hpp /usr/include/unistd.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/bits/predefs.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stddef.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
+ /usr/include/linux/limits.h /usr/include/x86_64-linux-gnu/sys/time.h \
+ /usr/include/time.h /usr/include/x86_64-linux-gnu/bits/time.h \
+ /usr/include/x86_64-linux-gnu/sys/select.h \
+ /usr/include/x86_64-linux-gnu/bits/select.h \
+ /usr/include/x86_64-linux-gnu/bits/sigset.h /usr/include/syscall.h \
+ /usr/include/x86_64-linux-gnu/sys/syscall.h \
+ /usr/include/x86_64-linux-gnu/asm/unistd.h \
+ /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
+ /usr/include/x86_64-linux-gnu/bits/syscall.h /usr/include/fcntl.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl.h \
+ /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+ /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+ /usr/include/x86_64-linux-gnu/bits/uio.h \
+ /usr/include/x86_64-linux-gnu/bits/stat.h \
+ /usr/include/x86_64-linux-gnu/sys/stat.h /usr/include/signal.h \
+ /usr/include/x86_64-linux-gnu/bits/signum.h \
+ /usr/include/x86_64-linux-gnu/bits/siginfo.h \
+ /usr/include/x86_64-linux-gnu/bits/sigaction.h \
+ /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
+ /usr/include/x86_64-linux-gnu/bits/sigstack.h \
+ /usr/include/x86_64-linux-gnu/sys/ucontext.h \
+ /usr/include/x86_64-linux-gnu/bits/sigthread.h \
+ /usr/include/x86_64-linux-gnu/sys/socket.h \
+ /usr/include/x86_64-linux-gnu/sys/uio.h \
+ /usr/include/x86_64-linux-gnu/bits/socket.h \
+ /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
+ /usr/include/x86_64-linux-gnu/asm/socket.h \
+ /usr/include/asm-generic/socket.h \
+ /usr/include/x86_64-linux-gnu/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h /usr/include/netinet/in.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/in.h /usr/include/arpa/inet.h \
+ /usr/include/netdb.h /usr/include/rpc/netdb.h \
+ /usr/include/x86_64-linux-gnu/bits/netdb.h /usr/include/netinet/tcp.h \
+ /usr/include/x86_64-linux-gnu/sys/mman.h \
+ /usr/include/x86_64-linux-gnu/bits/mman.h /usr/include/pthread.h \
+ /usr/include/sched.h /usr/include/x86_64-linux-gnu/bits/sched.h \
+ /usr/include/x86_64-linux-gnu/bits/timex.h /usr/include/xlocale.h \
+ /usr/include/x86_64-linux-gnu/bits/setjmp.h /usr/include/errno.h \
+ /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/c++/4.6/cstdio \
+ /usr/include/c++/4.6/x86_64-linux-gnu/./bits/c++config.h \
+ /usr/include/c++/4.6/x86_64-linux-gnu/./bits/os_defines.h \
  /usr/include/c++/4.6/x86_64-linux-gnu/./bits/cpu_defines.h \
+ /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
+ /usr/include/wchar.h /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdarg.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+ /usr/include/c++/4.6/cstdlib /usr/include/stdlib.h \
+ /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/alloca.h \
+ /usr/include/c++/4.6/cstring /usr/include/string.h \
+ /usr/include/c++/4.6/ctime /usr/include/c++/4.6/cstdarg \
+ /usr/include/c++/4.6/string /usr/include/c++/4.6/bits/stringfwd.h \
+ /usr/include/c++/4.6/bits/char_traits.h \
+ /usr/include/c++/4.6/bits/stl_algobase.h \
  /usr/include/c++/4.6/bits/functexcept.h \
  /usr/include/c++/4.6/bits/exception_defines.h \
  /usr/include/c++/4.6/bits/cpp_type_traits.h \
@@ -19,65 +83,39 @@ edb-commandFactory.o: client/commandFactory.cpp client/commandFactory.hpp \
  /usr/include/c++/4.6/bits/stl_iterator_base_types.h \
  /usr/include/c++/4.6/bits/stl_iterator_base_funcs.h \
  /usr/include/c++/4.6/bits/stl_iterator.h \
- /usr/include/c++/4.6/debug/debug.h /usr/include/c++/4.6/bits/allocator.h \
+ /usr/include/c++/4.6/debug/debug.h /usr/include/c++/4.6/bits/postypes.h \
+ /usr/include/c++/4.6/cwchar /usr/include/c++/4.6/bits/allocator.h \
  /usr/include/c++/4.6/x86_64-linux-gnu/./bits/c++allocator.h \
  /usr/include/c++/4.6/ext/new_allocator.h /usr/include/c++/4.6/new \
- /usr/include/c++/4.6/exception /usr/include/c++/4.6/bits/stl_construct.h \
- /usr/include/c++/4.6/bits/stl_uninitialized.h \
- /usr/include/c++/4.6/bits/stl_vector.h \
- /usr/include/c++/4.6/initializer_list \
- /usr/include/c++/4.6/bits/stl_bvector.h \
- /usr/include/c++/4.6/bits/range_access.h \
- /usr/include/c++/4.6/bits/vector.tcc bson/src/util/json.h \
- bson/src/util/../bson.h bson/src/util/../bsonassert.h \
- /usr/include/c++/4.6/cstdlib /usr/include/stdlib.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stddef.h \
- /usr/include/x86_64-linux-gnu/bits/waitflags.h \
- /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/endian.h \
- /usr/include/x86_64-linux-gnu/bits/endian.h \
- /usr/include/x86_64-linux-gnu/bits/byteswap.h /usr/include/xlocale.h \
- /usr/include/x86_64-linux-gnu/sys/types.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h /usr/include/time.h \
- /usr/include/x86_64-linux-gnu/sys/select.h \
- /usr/include/x86_64-linux-gnu/bits/select.h \
- /usr/include/x86_64-linux-gnu/bits/sigset.h \
- /usr/include/x86_64-linux-gnu/bits/time.h \
- /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h /usr/include/alloca.h \
- /usr/include/c++/4.6/memory /usr/include/c++/4.6/bits/stl_tempbuf.h \
- /usr/include/c++/4.6/bits/stl_raw_storage_iter.h \
- /usr/include/c++/4.6/backward/auto_ptr.h /usr/include/c++/4.6/iostream \
- /usr/include/c++/4.6/ostream /usr/include/c++/4.6/ios \
- /usr/include/c++/4.6/iosfwd /usr/include/c++/4.6/bits/stringfwd.h \
- /usr/include/c++/4.6/bits/postypes.h /usr/include/c++/4.6/cwchar \
- /usr/include/wchar.h /usr/include/stdio.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdarg.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /usr/include/c++/4.6/bits/char_traits.h \
- /usr/include/c++/4.6/bits/localefwd.h \
+ /usr/include/c++/4.6/exception /usr/include/c++/4.6/bits/localefwd.h \
  /usr/include/c++/4.6/x86_64-linux-gnu/./bits/c++locale.h \
  /usr/include/c++/4.6/clocale /usr/include/locale.h \
- /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/4.6/cctype \
- /usr/include/ctype.h /usr/include/c++/4.6/bits/ios_base.h \
- /usr/include/c++/4.6/ext/atomicity.h \
- /usr/include/c++/4.6/x86_64-linux-gnu/./bits/gthr.h \
- /usr/include/c++/4.6/x86_64-linux-gnu/./bits/gthr-default.h \
- /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/x86_64-linux-gnu/bits/sched.h \
- /usr/include/x86_64-linux-gnu/bits/timex.h \
- /usr/include/x86_64-linux-gnu/bits/setjmp.h /usr/include/unistd.h \
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
- /usr/include/x86_64-linux-gnu/bits/environments.h \
- /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
- /usr/include/c++/4.6/x86_64-linux-gnu/./bits/atomic_word.h \
- /usr/include/c++/4.6/bits/locale_classes.h /usr/include/c++/4.6/string \
+ /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/4.6/iosfwd \
+ /usr/include/c++/4.6/cctype /usr/include/ctype.h \
  /usr/include/c++/4.6/bits/ostream_insert.h \
  /usr/include/c++/4.6/bits/cxxabi_forced.h \
  /usr/include/c++/4.6/bits/stl_function.h \
  /usr/include/c++/4.6/backward/binders.h \
+ /usr/include/c++/4.6/bits/range_access.h \
  /usr/include/c++/4.6/bits/basic_string.h \
- /usr/include/c++/4.6/bits/basic_string.tcc \
+ /usr/include/c++/4.6/ext/atomicity.h \
+ /usr/include/c++/4.6/x86_64-linux-gnu/./bits/gthr.h \
+ /usr/include/c++/4.6/x86_64-linux-gnu/./bits/gthr-default.h \
+ /usr/include/c++/4.6/x86_64-linux-gnu/./bits/atomic_word.h \
+ /usr/include/c++/4.6/initializer_list \
+ /usr/include/c++/4.6/bits/basic_string.tcc /usr/include/c++/4.6/map \
+ /usr/include/c++/4.6/bits/stl_tree.h /usr/include/c++/4.6/bits/stl_map.h \
+ /usr/include/c++/4.6/bits/stl_multimap.h /usr/include/c++/4.6/set \
+ /usr/include/c++/4.6/bits/stl_set.h \
+ /usr/include/c++/4.6/bits/stl_multiset.h /usr/include/c++/4.6/vector \
+ /usr/include/c++/4.6/bits/stl_construct.h \
+ /usr/include/c++/4.6/bits/stl_uninitialized.h \
+ /usr/include/c++/4.6/bits/stl_vector.h \
+ /usr/include/c++/4.6/bits/stl_bvector.h \
+ /usr/include/c++/4.6/bits/vector.tcc /usr/include/c++/4.6/iostream \
+ /usr/include/c++/4.6/ostream /usr/include/c++/4.6/ios \
+ /usr/include/c++/4.6/bits/ios_base.h \
+ /usr/include/c++/4.6/bits/locale_classes.h \
  /usr/include/c++/4.6/bits/locale_classes.tcc \
  /usr/include/c++/4.6/streambuf /usr/include/c++/4.6/bits/streambuf.tcc \
  /usr/include/c++/4.6/bits/basic_ios.h \
@@ -89,7 +127,11 @@ edb-commandFactory.o: client/commandFactory.cpp client/commandFactory.hpp \
  /usr/include/c++/4.6/bits/locale_facets.tcc \
  /usr/include/c++/4.6/bits/basic_ios.tcc \
  /usr/include/c++/4.6/bits/ostream.tcc /usr/include/c++/4.6/istream \
- /usr/include/c++/4.6/bits/istream.tcc /usr/include/c++/4.6/sstream \
+ /usr/include/c++/4.6/bits/istream.tcc bson/src/util/json.h \
+ bson/src/util/../bson.h bson/src/util/../bsonassert.h \
+ /usr/include/c++/4.6/memory /usr/include/c++/4.6/bits/stl_tempbuf.h \
+ /usr/include/c++/4.6/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/4.6/backward/auto_ptr.h /usr/include/c++/4.6/sstream \
  /usr/include/c++/4.6/bits/sstream.tcc ../boost/boost/utility.hpp \
  ../boost/boost/utility/addressof.hpp ../boost/boost/config.hpp \
  ../boost/boost/config/user.hpp \
@@ -209,16 +251,11 @@ edb-commandFactory.o: client/commandFactory.cpp client/commandFactory.hpp \
  /usr/include/c++/4.6/iterator \
  /usr/include/c++/4.6/bits/stream_iterator.h \
  ../boost/boost/noncopyable.hpp bson/src/util/../stringdata.h \
- /usr/include/c++/4.6/cstring /usr/include/string.h \
  bson/src/util/../bsontypes.h bson/src/util/../util/misc.h \
- /usr/include/c++/4.6/ctime bson/src/util/../oid.h \
- bson/src/util/../util/hex.h bson/src/util/../util/builder.h \
- /usr/include/libio.h /usr/include/_G_config.h \
- /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
- bson/src/util/../util/../inline_decls.h bson/src/util/../bsonelement.h \
- bson/src/util/../util/optime.h bson/src/util/../bsonobj.h \
- ../boost/boost/intrusive_ptr.hpp \
+ bson/src/util/../oid.h bson/src/util/../util/hex.h \
+ bson/src/util/../util/builder.h bson/src/util/../util/../inline_decls.h \
+ bson/src/util/../bsonelement.h bson/src/util/../util/optime.h \
+ bson/src/util/../bsonobj.h ../boost/boost/intrusive_ptr.hpp \
  ../boost/boost/smart_ptr/intrusive_ptr.hpp ../boost/boost/assert.hpp \
  /usr/include/assert.h ../boost/boost/current_function.hpp \
  ../boost/boost/smart_ptr/detail/sp_convertible.hpp \
@@ -226,14 +263,11 @@ edb-commandFactory.o: client/commandFactory.cpp client/commandFactory.hpp \
  ../boost/boost/config/no_tr1/functional.hpp \
  /usr/include/c++/4.6/functional \
  ../boost/boost/smart_ptr/detail/operator_bool.hpp \
- /usr/include/c++/4.6/set /usr/include/c++/4.6/bits/stl_tree.h \
- /usr/include/c++/4.6/bits/stl_set.h \
- /usr/include/c++/4.6/bits/stl_multiset.h /usr/include/c++/4.6/list \
- /usr/include/c++/4.6/bits/stl_list.h /usr/include/c++/4.6/bits/list.tcc \
- bson/src/util/../lib/atomic_int.h bson/src/util/../bsonmisc.h \
- bson/src/util/../bsonobjbuilder.h /usr/include/c++/4.6/limits \
- /usr/include/c++/4.6/cmath /usr/include/math.h \
- /usr/include/x86_64-linux-gnu/bits/huge_val.h \
+ /usr/include/c++/4.6/list /usr/include/c++/4.6/bits/stl_list.h \
+ /usr/include/c++/4.6/bits/list.tcc bson/src/util/../lib/atomic_int.h \
+ bson/src/util/../bsonmisc.h bson/src/util/../bsonobjbuilder.h \
+ /usr/include/c++/4.6/limits /usr/include/c++/4.6/cmath \
+ /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/huge_val.h \
  /usr/include/x86_64-linux-gnu/bits/huge_valf.h \
  /usr/include/x86_64-linux-gnu/bits/huge_vall.h \
  /usr/include/x86_64-linux-gnu/bits/inf.h \
@@ -241,13 +275,16 @@ edb-commandFactory.o: client/commandFactory.cpp client/commandFactory.hpp \
  /usr/include/x86_64-linux-gnu/bits/mathdef.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  bson/src/util/../bsonobjiterator.h bson/src/util/../bson-inl.h \
- /usr/include/c++/4.6/map /usr/include/c++/4.6/bits/stl_map.h \
- /usr/include/c++/4.6/bits/stl_multimap.h bson/src/util/../bson_db.h \
- bson/src/util/../util/time_support.h /usr/include/c++/4.6/cstdio \
+ bson/src/util/../bson_db.h bson/src/util/../util/time_support.h \
  ../boost/boost/date_time/posix_time/posix_time.hpp \
  ../boost/boost/date_time/compiler_config.hpp \
  ../boost/boost/date_time/locale_config.hpp ../boost/boost/cstdint.hpp \
- /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.6/include-fixed/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.6/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  ../boost/boost/config/auto_link.hpp \
  ../boost/boost/date_time/posix_time/ptime.hpp \
  ../boost/boost/date_time/posix_time/posix_time_system.hpp \
@@ -326,7 +363,6 @@ edb-commandFactory.o: client/commandFactory.cpp client/commandFactory.hpp \
  ../boost/boost/date_time/date_generators.hpp \
  ../boost/boost/date_time/date_clock_device.hpp \
  ../boost/boost/date_time/c_time.hpp \
- /usr/include/x86_64-linux-gnu/sys/time.h \
  ../boost/boost/date_time/date_iterator.hpp \
  ../boost/boost/date_time/time_system_split.hpp \
  ../boost/boost/date_time/time_system_counted.hpp \
@@ -495,13 +531,6 @@ edb-commandFactory.o: client/commandFactory.cpp client/commandFactory.hpp \
  ../boost/boost/date_time/period_parser.hpp \
  ../boost/boost/date_time/string_parse_tree.hpp \
  ../boost/boost/lexical_cast.hpp /usr/include/c++/4.6/climits \
- /usr/lib/gcc/x86_64-linux-gnu/4.6/include-fixed/limits.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.6/include-fixed/syslimits.h \
- /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
- /usr/include/x86_64-linux-gnu/bits/local_lim.h \
- /usr/include/linux/limits.h \
- /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
- /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  ../boost/boost/detail/lcast_precision.hpp \
  ../boost/boost/integer_traits.hpp ../boost/boost/array.hpp \
  ../boost/boost/swap.hpp ../boost/boost/utility/swap.hpp \
@@ -720,50 +749,15 @@ edb-commandFactory.o: client/commandFactory.cpp client/commandFactory.hpp \
  ../boost/boost/thread/thread_time.hpp \
  ../boost/boost/config/abi_prefix.hpp \
  ../boost/boost/config/abi_suffix.hpp include/ossSocket.hpp \
- include/core.hpp /usr/include/syscall.h \
- /usr/include/x86_64-linux-gnu/sys/syscall.h \
- /usr/include/x86_64-linux-gnu/asm/unistd.h \
- /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
- /usr/include/x86_64-linux-gnu/bits/syscall.h /usr/include/fcntl.h \
- /usr/include/x86_64-linux-gnu/bits/fcntl.h \
- /usr/include/x86_64-linux-gnu/bits/uio.h \
- /usr/include/x86_64-linux-gnu/bits/stat.h \
- /usr/include/x86_64-linux-gnu/sys/stat.h /usr/include/errno.h \
- /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
- /usr/include/x86_64-linux-gnu/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/include/signal.h /usr/include/x86_64-linux-gnu/bits/signum.h \
- /usr/include/x86_64-linux-gnu/bits/siginfo.h \
- /usr/include/x86_64-linux-gnu/bits/sigaction.h \
- /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
- /usr/include/x86_64-linux-gnu/bits/sigstack.h \
- /usr/include/x86_64-linux-gnu/sys/ucontext.h \
- /usr/include/x86_64-linux-gnu/bits/sigthread.h \
- /usr/include/x86_64-linux-gnu/sys/socket.h \
- /usr/include/x86_64-linux-gnu/sys/uio.h \
- /usr/include/x86_64-linux-gnu/bits/socket.h \
- /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
- /usr/include/x86_64-linux-gnu/asm/socket.h \
- /usr/include/asm-generic/socket.h \
- /usr/include/x86_64-linux-gnu/asm/sockios.h \
- /usr/include/asm-generic/sockios.h /usr/include/netinet/in.h \
- /usr/include/x86_64-linux-gnu/bits/in.h /usr/include/arpa/inet.h \
- /usr/include/netdb.h /usr/include/rpc/netdb.h \
- /usr/include/x86_64-linux-gnu/bits/netdb.h /usr/include/netinet/tcp.h \
- /usr/include/x86_64-linux-gnu/sys/mman.h \
- /usr/include/x86_64-linux-gnu/bits/mman.h
+ include/core.hpp
 
 client/commandFactory.hpp:
 
 client/command.hpp:
 
-/usr/include/c++/4.6/vector:
+include/core.hpp:
 
-/usr/include/c++/4.6/bits/stl_algobase.h:
-
-/usr/include/c++/4.6/x86_64-linux-gnu/./bits/c++config.h:
-
-/usr/include/c++/4.6/x86_64-linux-gnu/./bits/os_defines.h:
+/usr/include/unistd.h:
 
 /usr/include/features.h:
 
@@ -777,7 +771,193 @@ client/command.hpp:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/4.6/include/stddef.h:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/usr/include/getopt.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/x86_64-linux-gnu/sys/time.h:
+
+/usr/include/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
+
+/usr/include/x86_64-linux-gnu/sys/select.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigset.h:
+
+/usr/include/syscall.h:
+
+/usr/include/x86_64-linux-gnu/sys/syscall.h:
+
+/usr/include/x86_64-linux-gnu/asm/unistd.h:
+
+/usr/include/x86_64-linux-gnu/asm/unistd_64.h:
+
+/usr/include/x86_64-linux-gnu/bits/syscall.h:
+
+/usr/include/fcntl.h:
+
+/usr/include/x86_64-linux-gnu/bits/fcntl.h:
+
+/usr/include/x86_64-linux-gnu/sys/types.h:
+
+/usr/include/endian.h:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/x86_64-linux-gnu/sys/sysmacros.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/usr/include/x86_64-linux-gnu/bits/uio.h:
+
+/usr/include/x86_64-linux-gnu/bits/stat.h:
+
+/usr/include/x86_64-linux-gnu/sys/stat.h:
+
+/usr/include/signal.h:
+
+/usr/include/x86_64-linux-gnu/bits/signum.h:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigaction.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigstack.h:
+
+/usr/include/x86_64-linux-gnu/sys/ucontext.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigthread.h:
+
+/usr/include/x86_64-linux-gnu/sys/socket.h:
+
+/usr/include/x86_64-linux-gnu/sys/uio.h:
+
+/usr/include/x86_64-linux-gnu/bits/socket.h:
+
+/usr/include/x86_64-linux-gnu/bits/sockaddr.h:
+
+/usr/include/x86_64-linux-gnu/asm/socket.h:
+
+/usr/include/asm-generic/socket.h:
+
+/usr/include/x86_64-linux-gnu/asm/sockios.h:
+
+/usr/include/asm-generic/sockios.h:
+
+/usr/include/netinet/in.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/in.h:
+
+/usr/include/arpa/inet.h:
+
+/usr/include/netdb.h:
+
+/usr/include/rpc/netdb.h:
+
+/usr/include/x86_64-linux-gnu/bits/netdb.h:
+
+/usr/include/netinet/tcp.h:
+
+/usr/include/x86_64-linux-gnu/sys/mman.h:
+
+/usr/include/x86_64-linux-gnu/bits/mman.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/include/x86_64-linux-gnu/bits/timex.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/usr/include/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/errno.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/c++/4.6/cstdio:
+
+/usr/include/c++/4.6/x86_64-linux-gnu/./bits/c++config.h:
+
+/usr/include/c++/4.6/x86_64-linux-gnu/./bits/os_defines.h:
+
 /usr/include/c++/4.6/x86_64-linux-gnu/./bits/cpu_defines.h:
+
+/usr/include/stdio.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdarg.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
+
+/usr/include/c++/4.6/cstdlib:
+
+/usr/include/stdlib.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/usr/include/alloca.h:
+
+/usr/include/c++/4.6/cstring:
+
+/usr/include/string.h:
+
+/usr/include/c++/4.6/ctime:
+
+/usr/include/c++/4.6/cstdarg:
+
+/usr/include/c++/4.6/string:
+
+/usr/include/c++/4.6/bits/stringfwd.h:
+
+/usr/include/c++/4.6/bits/char_traits.h:
+
+/usr/include/c++/4.6/bits/stl_algobase.h:
 
 /usr/include/c++/4.6/bits/functexcept.h:
 
@@ -803,6 +983,10 @@ client/command.hpp:
 
 /usr/include/c++/4.6/debug/debug.h:
 
+/usr/include/c++/4.6/bits/postypes.h:
+
+/usr/include/c++/4.6/cwchar:
+
 /usr/include/c++/4.6/bits/allocator.h:
 
 /usr/include/c++/4.6/x86_64-linux-gnu/./bits/c++allocator.h:
@@ -812,98 +996,6 @@ client/command.hpp:
 /usr/include/c++/4.6/new:
 
 /usr/include/c++/4.6/exception:
-
-/usr/include/c++/4.6/bits/stl_construct.h:
-
-/usr/include/c++/4.6/bits/stl_uninitialized.h:
-
-/usr/include/c++/4.6/bits/stl_vector.h:
-
-/usr/include/c++/4.6/initializer_list:
-
-/usr/include/c++/4.6/bits/stl_bvector.h:
-
-/usr/include/c++/4.6/bits/range_access.h:
-
-/usr/include/c++/4.6/bits/vector.tcc:
-
-bson/src/util/json.h:
-
-bson/src/util/../bson.h:
-
-bson/src/util/../bsonassert.h:
-
-/usr/include/c++/4.6/cstdlib:
-
-/usr/include/stdlib.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/4.6/include/stddef.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/endian.h:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-/usr/include/xlocale.h:
-
-/usr/include/x86_64-linux-gnu/sys/types.h:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
-
-/usr/include/time.h:
-
-/usr/include/x86_64-linux-gnu/sys/select.h:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigset.h:
-
-/usr/include/x86_64-linux-gnu/bits/time.h:
-
-/usr/include/x86_64-linux-gnu/sys/sysmacros.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
-
-/usr/include/alloca.h:
-
-/usr/include/c++/4.6/memory:
-
-/usr/include/c++/4.6/bits/stl_tempbuf.h:
-
-/usr/include/c++/4.6/bits/stl_raw_storage_iter.h:
-
-/usr/include/c++/4.6/backward/auto_ptr.h:
-
-/usr/include/c++/4.6/iostream:
-
-/usr/include/c++/4.6/ostream:
-
-/usr/include/c++/4.6/ios:
-
-/usr/include/c++/4.6/iosfwd:
-
-/usr/include/c++/4.6/bits/stringfwd.h:
-
-/usr/include/c++/4.6/bits/postypes.h:
-
-/usr/include/c++/4.6/cwchar:
-
-/usr/include/wchar.h:
-
-/usr/include/stdio.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdarg.h:
-
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
-
-/usr/include/c++/4.6/bits/char_traits.h:
 
 /usr/include/c++/4.6/bits/localefwd.h:
 
@@ -915,43 +1007,11 @@ bson/src/util/../bsonassert.h:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
+/usr/include/c++/4.6/iosfwd:
+
 /usr/include/c++/4.6/cctype:
 
 /usr/include/ctype.h:
-
-/usr/include/c++/4.6/bits/ios_base.h:
-
-/usr/include/c++/4.6/ext/atomicity.h:
-
-/usr/include/c++/4.6/x86_64-linux-gnu/./bits/gthr.h:
-
-/usr/include/c++/4.6/x86_64-linux-gnu/./bits/gthr-default.h:
-
-/usr/include/pthread.h:
-
-/usr/include/sched.h:
-
-/usr/include/x86_64-linux-gnu/bits/sched.h:
-
-/usr/include/x86_64-linux-gnu/bits/timex.h:
-
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
-
-/usr/include/unistd.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
-
-/usr/include/x86_64-linux-gnu/bits/environments.h:
-
-/usr/include/x86_64-linux-gnu/bits/confname.h:
-
-/usr/include/getopt.h:
-
-/usr/include/c++/4.6/x86_64-linux-gnu/./bits/atomic_word.h:
-
-/usr/include/c++/4.6/bits/locale_classes.h:
-
-/usr/include/c++/4.6/string:
 
 /usr/include/c++/4.6/bits/ostream_insert.h:
 
@@ -961,9 +1021,57 @@ bson/src/util/../bsonassert.h:
 
 /usr/include/c++/4.6/backward/binders.h:
 
+/usr/include/c++/4.6/bits/range_access.h:
+
 /usr/include/c++/4.6/bits/basic_string.h:
 
+/usr/include/c++/4.6/ext/atomicity.h:
+
+/usr/include/c++/4.6/x86_64-linux-gnu/./bits/gthr.h:
+
+/usr/include/c++/4.6/x86_64-linux-gnu/./bits/gthr-default.h:
+
+/usr/include/c++/4.6/x86_64-linux-gnu/./bits/atomic_word.h:
+
+/usr/include/c++/4.6/initializer_list:
+
 /usr/include/c++/4.6/bits/basic_string.tcc:
+
+/usr/include/c++/4.6/map:
+
+/usr/include/c++/4.6/bits/stl_tree.h:
+
+/usr/include/c++/4.6/bits/stl_map.h:
+
+/usr/include/c++/4.6/bits/stl_multimap.h:
+
+/usr/include/c++/4.6/set:
+
+/usr/include/c++/4.6/bits/stl_set.h:
+
+/usr/include/c++/4.6/bits/stl_multiset.h:
+
+/usr/include/c++/4.6/vector:
+
+/usr/include/c++/4.6/bits/stl_construct.h:
+
+/usr/include/c++/4.6/bits/stl_uninitialized.h:
+
+/usr/include/c++/4.6/bits/stl_vector.h:
+
+/usr/include/c++/4.6/bits/stl_bvector.h:
+
+/usr/include/c++/4.6/bits/vector.tcc:
+
+/usr/include/c++/4.6/iostream:
+
+/usr/include/c++/4.6/ostream:
+
+/usr/include/c++/4.6/ios:
+
+/usr/include/c++/4.6/bits/ios_base.h:
+
+/usr/include/c++/4.6/bits/locale_classes.h:
 
 /usr/include/c++/4.6/bits/locale_classes.tcc:
 
@@ -994,6 +1102,20 @@ bson/src/util/../bsonassert.h:
 /usr/include/c++/4.6/istream:
 
 /usr/include/c++/4.6/bits/istream.tcc:
+
+bson/src/util/json.h:
+
+bson/src/util/../bson.h:
+
+bson/src/util/../bsonassert.h:
+
+/usr/include/c++/4.6/memory:
+
+/usr/include/c++/4.6/bits/stl_tempbuf.h:
+
+/usr/include/c++/4.6/bits/stl_raw_storage_iter.h:
+
+/usr/include/c++/4.6/backward/auto_ptr.h:
 
 /usr/include/c++/4.6/sstream:
 
@@ -1255,29 +1377,15 @@ bson/src/util/../bsonassert.h:
 
 bson/src/util/../stringdata.h:
 
-/usr/include/c++/4.6/cstring:
-
-/usr/include/string.h:
-
 bson/src/util/../bsontypes.h:
 
 bson/src/util/../util/misc.h:
-
-/usr/include/c++/4.6/ctime:
 
 bson/src/util/../oid.h:
 
 bson/src/util/../util/hex.h:
 
 bson/src/util/../util/builder.h:
-
-/usr/include/libio.h:
-
-/usr/include/_G_config.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
 
 bson/src/util/../util/../inline_decls.h:
 
@@ -1306,14 +1414,6 @@ bson/src/util/../bsonobj.h:
 /usr/include/c++/4.6/functional:
 
 ../boost/boost/smart_ptr/detail/operator_bool.hpp:
-
-/usr/include/c++/4.6/set:
-
-/usr/include/c++/4.6/bits/stl_tree.h:
-
-/usr/include/c++/4.6/bits/stl_set.h:
-
-/usr/include/c++/4.6/bits/stl_multiset.h:
 
 /usr/include/c++/4.6/list:
 
@@ -1351,17 +1451,9 @@ bson/src/util/../bsonobjiterator.h:
 
 bson/src/util/../bson-inl.h:
 
-/usr/include/c++/4.6/map:
-
-/usr/include/c++/4.6/bits/stl_map.h:
-
-/usr/include/c++/4.6/bits/stl_multimap.h:
-
 bson/src/util/../bson_db.h:
 
 bson/src/util/../util/time_support.h:
-
-/usr/include/c++/4.6/cstdio:
 
 ../boost/boost/date_time/posix_time/posix_time.hpp:
 
@@ -1371,9 +1463,19 @@ bson/src/util/../util/time_support.h:
 
 ../boost/boost/cstdint.hpp:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdint.h:
+/usr/lib/gcc/x86_64-linux-gnu/4.6/include-fixed/limits.h:
 
-/usr/include/stdint.h:
+/usr/lib/gcc/x86_64-linux-gnu/4.6/include-fixed/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
 ../boost/boost/config/auto_link.hpp:
 
@@ -1552,8 +1654,6 @@ bson/src/util/../util/time_support.h:
 ../boost/boost/date_time/date_clock_device.hpp:
 
 ../boost/boost/date_time/c_time.hpp:
-
-/usr/include/x86_64-linux-gnu/sys/time.h:
 
 ../boost/boost/date_time/date_iterator.hpp:
 
@@ -1942,22 +2042,6 @@ bson/src/util/../util/time_support.h:
 ../boost/boost/lexical_cast.hpp:
 
 /usr/include/c++/4.6/climits:
-
-/usr/lib/gcc/x86_64-linux-gnu/4.6/include-fixed/limits.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/4.6/include-fixed/syslimits.h:
-
-/usr/include/limits.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/local_lim.h:
-
-/usr/include/linux/limits.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
 ../boost/boost/detail/lcast_precision.hpp:
 
@@ -2476,85 +2560,3 @@ bson/src/util/../util/time_support.h:
 include/ossSocket.hpp:
 
 include/core.hpp:
-
-/usr/include/syscall.h:
-
-/usr/include/x86_64-linux-gnu/sys/syscall.h:
-
-/usr/include/x86_64-linux-gnu/asm/unistd.h:
-
-/usr/include/x86_64-linux-gnu/asm/unistd_64.h:
-
-/usr/include/x86_64-linux-gnu/bits/syscall.h:
-
-/usr/include/fcntl.h:
-
-/usr/include/x86_64-linux-gnu/bits/fcntl.h:
-
-/usr/include/x86_64-linux-gnu/bits/uio.h:
-
-/usr/include/x86_64-linux-gnu/bits/stat.h:
-
-/usr/include/x86_64-linux-gnu/sys/stat.h:
-
-/usr/include/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/errno.h:
-
-/usr/include/linux/errno.h:
-
-/usr/include/x86_64-linux-gnu/asm/errno.h:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/signal.h:
-
-/usr/include/x86_64-linux-gnu/bits/signum.h:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigaction.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigstack.h:
-
-/usr/include/x86_64-linux-gnu/sys/ucontext.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigthread.h:
-
-/usr/include/x86_64-linux-gnu/sys/socket.h:
-
-/usr/include/x86_64-linux-gnu/sys/uio.h:
-
-/usr/include/x86_64-linux-gnu/bits/socket.h:
-
-/usr/include/x86_64-linux-gnu/bits/sockaddr.h:
-
-/usr/include/x86_64-linux-gnu/asm/socket.h:
-
-/usr/include/asm-generic/socket.h:
-
-/usr/include/x86_64-linux-gnu/asm/sockios.h:
-
-/usr/include/asm-generic/sockios.h:
-
-/usr/include/netinet/in.h:
-
-/usr/include/x86_64-linux-gnu/bits/in.h:
-
-/usr/include/arpa/inet.h:
-
-/usr/include/netdb.h:
-
-/usr/include/rpc/netdb.h:
-
-/usr/include/x86_64-linux-gnu/bits/netdb.h:
-
-/usr/include/netinet/tcp.h:
-
-/usr/include/x86_64-linux-gnu/sys/mman.h:
-
-/usr/include/x86_64-linux-gnu/bits/mman.h:
