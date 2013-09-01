@@ -894,7 +894,7 @@ emeralddb-pmdAgent.o: pmd/pmdAgent.cpp include/pd.hpp include/core.hpp \
  pmd/../bson/src/bsonobjbuilder.h pmd/../bson/src/bsonobjiterator.h \
  pmd/../bson/src/bson-inl.h pmd/../bson/src/bson_db.h \
  pmd/../bson/src/util/time_support.h include/pmd.hpp \
- include/pmdEDUMgr.hpp
+ include/pmdEDUMgr.hpp include/msg.hpp
 
 include/pd.hpp:
 
@@ -3067,3 +3067,5 @@ pmd/../bson/src/util/time_support.h:
 include/pmd.hpp:
 
 include/pmdEDUMgr.hpp:
+
+include/msg.hpp:

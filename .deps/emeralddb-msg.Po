@@ -1,4 +1,4 @@
-edb-command.o: client/command.cpp include/core.hpp /usr/include/unistd.h \
+emeralddb-msg.o: msg/msg.cpp include/core.hpp /usr/include/unistd.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/bits/predefs.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -126,9 +126,8 @@ edb-command.o: client/command.cpp include/core.hpp /usr/include/unistd.h \
  /usr/include/c++/4.6/bits/locale_facets.tcc \
  /usr/include/c++/4.6/bits/basic_ios.tcc \
  /usr/include/c++/4.6/bits/ostream.tcc /usr/include/c++/4.6/istream \
- /usr/include/c++/4.6/bits/istream.tcc client/command.hpp \
- bson/src/util/json.h bson/src/util/../bson.h \
- bson/src/util/../bsonassert.h /usr/include/c++/4.6/memory \
+ /usr/include/c++/4.6/bits/istream.tcc include/msg.hpp bson/src/bson.h \
+ bson/src/bsonassert.h /usr/include/c++/4.6/memory \
  /usr/include/c++/4.6/bits/stl_tempbuf.h \
  /usr/include/c++/4.6/bits/stl_raw_storage_iter.h \
  /usr/include/c++/4.6/backward/auto_ptr.h /usr/include/c++/4.6/sstream \
@@ -250,12 +249,12 @@ edb-command.o: client/command.cpp include/core.hpp /usr/include/unistd.h \
  ../boost/boost/checked_delete.hpp ../boost/boost/next_prior.hpp \
  /usr/include/c++/4.6/iterator \
  /usr/include/c++/4.6/bits/stream_iterator.h \
- ../boost/boost/noncopyable.hpp bson/src/util/../stringdata.h \
- bson/src/util/../bsontypes.h bson/src/util/../util/misc.h \
- bson/src/util/../oid.h bson/src/util/../util/hex.h \
- bson/src/util/../util/builder.h bson/src/util/../util/../inline_decls.h \
- bson/src/util/../bsonelement.h bson/src/util/../util/optime.h \
- bson/src/util/../bsonobj.h ../boost/boost/intrusive_ptr.hpp \
+ ../boost/boost/noncopyable.hpp bson/src/stringdata.h \
+ bson/src/bsontypes.h bson/src/util/misc.h bson/src/oid.h \
+ bson/src/util/hex.h bson/src/util/builder.h \
+ bson/src/util/../inline_decls.h bson/src/bsonelement.h \
+ bson/src/util/optime.h bson/src/bsonobj.h \
+ ../boost/boost/intrusive_ptr.hpp \
  ../boost/boost/smart_ptr/intrusive_ptr.hpp ../boost/boost/assert.hpp \
  /usr/include/assert.h ../boost/boost/current_function.hpp \
  ../boost/boost/smart_ptr/detail/sp_convertible.hpp \
@@ -264,8 +263,8 @@ edb-command.o: client/command.cpp include/core.hpp /usr/include/unistd.h \
  /usr/include/c++/4.6/functional \
  ../boost/boost/smart_ptr/detail/operator_bool.hpp \
  /usr/include/c++/4.6/list /usr/include/c++/4.6/bits/stl_list.h \
- /usr/include/c++/4.6/bits/list.tcc bson/src/util/../lib/atomic_int.h \
- bson/src/util/../bsonmisc.h bson/src/util/../bsonobjbuilder.h \
+ /usr/include/c++/4.6/bits/list.tcc bson/src/lib/atomic_int.h \
+ bson/src/bsonmisc.h bson/src/bsonobjbuilder.h \
  /usr/include/c++/4.6/limits /usr/include/c++/4.6/cmath \
  /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/huge_val.h \
  /usr/include/x86_64-linux-gnu/bits/huge_valf.h \
@@ -274,8 +273,8 @@ edb-command.o: client/command.cpp include/core.hpp /usr/include/unistd.h \
  /usr/include/x86_64-linux-gnu/bits/nan.h \
  /usr/include/x86_64-linux-gnu/bits/mathdef.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- bson/src/util/../bsonobjiterator.h bson/src/util/../bson-inl.h \
- bson/src/util/../bson_db.h bson/src/util/../util/time_support.h \
+ bson/src/bsonobjiterator.h bson/src/bson-inl.h bson/src/bson_db.h \
+ bson/src/util/time_support.h \
  ../boost/boost/date_time/posix_time/posix_time.hpp \
  ../boost/boost/date_time/compiler_config.hpp \
  ../boost/boost/date_time/locale_config.hpp ../boost/boost/cstdint.hpp \
@@ -748,9 +747,7 @@ edb-command.o: client/command.cpp include/core.hpp /usr/include/unistd.h \
  ../boost/boost/config/requires_threads.hpp \
  ../boost/boost/thread/thread_time.hpp \
  ../boost/boost/config/abi_prefix.hpp \
- ../boost/boost/config/abi_suffix.hpp include/ossSocket.hpp \
- include/core.hpp client/commandFactory.hpp include/pd.hpp \
- include/msg.hpp
+ ../boost/boost/config/abi_suffix.hpp include/pd.hpp include/core.hpp
 
 include/core.hpp:
 
@@ -1100,13 +1097,11 @@ include/core.hpp:
 
 /usr/include/c++/4.6/bits/istream.tcc:
 
-client/command.hpp:
+include/msg.hpp:
 
-bson/src/util/json.h:
+bson/src/bson.h:
 
-bson/src/util/../bson.h:
-
-bson/src/util/../bsonassert.h:
+bson/src/bsonassert.h:
 
 /usr/include/c++/4.6/memory:
 
@@ -1374,25 +1369,25 @@ bson/src/util/../bsonassert.h:
 
 ../boost/boost/noncopyable.hpp:
 
-bson/src/util/../stringdata.h:
+bson/src/stringdata.h:
 
-bson/src/util/../bsontypes.h:
+bson/src/bsontypes.h:
 
-bson/src/util/../util/misc.h:
+bson/src/util/misc.h:
 
-bson/src/util/../oid.h:
+bson/src/oid.h:
 
-bson/src/util/../util/hex.h:
+bson/src/util/hex.h:
 
-bson/src/util/../util/builder.h:
+bson/src/util/builder.h:
 
-bson/src/util/../util/../inline_decls.h:
+bson/src/util/../inline_decls.h:
 
-bson/src/util/../bsonelement.h:
+bson/src/bsonelement.h:
 
-bson/src/util/../util/optime.h:
+bson/src/util/optime.h:
 
-bson/src/util/../bsonobj.h:
+bson/src/bsonobj.h:
 
 ../boost/boost/intrusive_ptr.hpp:
 
@@ -1420,11 +1415,11 @@ bson/src/util/../bsonobj.h:
 
 /usr/include/c++/4.6/bits/list.tcc:
 
-bson/src/util/../lib/atomic_int.h:
+bson/src/lib/atomic_int.h:
 
-bson/src/util/../bsonmisc.h:
+bson/src/bsonmisc.h:
 
-bson/src/util/../bsonobjbuilder.h:
+bson/src/bsonobjbuilder.h:
 
 /usr/include/c++/4.6/limits:
 
@@ -1446,13 +1441,13 @@ bson/src/util/../bsonobjbuilder.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
-bson/src/util/../bsonobjiterator.h:
+bson/src/bsonobjiterator.h:
 
-bson/src/util/../bson-inl.h:
+bson/src/bson-inl.h:
 
-bson/src/util/../bson_db.h:
+bson/src/bson_db.h:
 
-bson/src/util/../util/time_support.h:
+bson/src/util/time_support.h:
 
 ../boost/boost/date_time/posix_time/posix_time.hpp:
 
@@ -2556,12 +2551,6 @@ bson/src/util/../util/time_support.h:
 
 ../boost/boost/config/abi_suffix.hpp:
 
-include/ossSocket.hpp:
-
-include/core.hpp:
-
-client/commandFactory.hpp:
-
 include/pd.hpp:
 
-include/msg.hpp:
+include/core.hpp:
