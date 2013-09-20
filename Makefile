@@ -72,7 +72,7 @@ am_emeralddb_OBJECTS = emeralddb-pmdMain.$(OBJEXT) \
 	emeralddb-nonce.$(OBJEXT) emeralddb-ossSocket.$(OBJEXT) \
 	emeralddb-ossPrimitiveFileOp.$(OBJEXT) \
 	emeralddb-ossMmapFile.$(OBJEXT) emeralddb-pd.$(OBJEXT) \
-	emeralddb-msg.$(OBJEXT)
+	emeralddb-msg.$(OBJEXT) emeralddb-dms.$(OBJEXT)
 emeralddb_OBJECTS = $(am_emeralddb_OBJECTS)
 emeralddb_DEPENDENCIES =
 emeralddb_LINK = $(CXXLD) $(emeralddb_CXXFLAGS) $(CXXFLAGS) \
@@ -210,7 +210,7 @@ emeralddb_SOURCES = \
    bson/src/bsonobj.cpp bson/src/util/json.cpp bson/src/oid.cpp \
    bson/src/lib/base64.cpp bson/src/lib/md5.cpp bson/src/lib/nonce.cpp \
    oss/ossSocket.cpp oss/ossPrimitiveFileOp.cpp oss/ossMmapFile.cpp \
-   pd/pd.cpp msg/msg.cpp
+   pd/pd.cpp msg/msg.cpp dms/dms.cpp
 
 edb_SOURCES = \
    client/edb.cpp client/command.cpp client/commandFactory.cpp \
@@ -344,6 +344,7 @@ include ./$(DEPDIR)/edb-ossSocket.Po
 include ./$(DEPDIR)/edb-pd.Po
 include ./$(DEPDIR)/emeralddb-base64.Po
 include ./$(DEPDIR)/emeralddb-bsonobj.Po
+include ./$(DEPDIR)/emeralddb-dms.Po
 include ./$(DEPDIR)/emeralddb-json.Po
 include ./$(DEPDIR)/emeralddb-md5.Po
 include ./$(DEPDIR)/emeralddb-msg.Po
@@ -808,6 +809,20 @@ emeralddb-msg.obj: msg/msg.cpp
 #	source='msg/msg.cpp' object='emeralddb-msg.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(emeralddb_CXXFLAGS) $(CXXFLAGS) -c -o emeralddb-msg.obj `if test -f 'msg/msg.cpp'; then $(CYGPATH_W) 'msg/msg.cpp'; else $(CYGPATH_W) '$(srcdir)/msg/msg.cpp'; fi`
+
+emeralddb-dms.o: dms/dms.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(emeralddb_CXXFLAGS) $(CXXFLAGS) -MT emeralddb-dms.o -MD -MP -MF $(DEPDIR)/emeralddb-dms.Tpo -c -o emeralddb-dms.o `test -f 'dms/dms.cpp' || echo '$(srcdir)/'`dms/dms.cpp
+	$(am__mv) $(DEPDIR)/emeralddb-dms.Tpo $(DEPDIR)/emeralddb-dms.Po
+#	source='dms/dms.cpp' object='emeralddb-dms.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(emeralddb_CXXFLAGS) $(CXXFLAGS) -c -o emeralddb-dms.o `test -f 'dms/dms.cpp' || echo '$(srcdir)/'`dms/dms.cpp
+
+emeralddb-dms.obj: dms/dms.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(emeralddb_CXXFLAGS) $(CXXFLAGS) -MT emeralddb-dms.obj -MD -MP -MF $(DEPDIR)/emeralddb-dms.Tpo -c -o emeralddb-dms.obj `if test -f 'dms/dms.cpp'; then $(CYGPATH_W) 'dms/dms.cpp'; else $(CYGPATH_W) '$(srcdir)/dms/dms.cpp'; fi`
+	$(am__mv) $(DEPDIR)/emeralddb-dms.Tpo $(DEPDIR)/emeralddb-dms.Po
+#	source='dms/dms.cpp' object='emeralddb-dms.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(emeralddb_CXXFLAGS) $(CXXFLAGS) -c -o emeralddb-dms.obj `if test -f 'dms/dms.cpp'; then $(CYGPATH_W) 'dms/dms.cpp'; else $(CYGPATH_W) '$(srcdir)/dms/dms.cpp'; fi`
 
 ID: $(HEADERS) $(SOURCES) $(LISP) $(TAGS_FILES)
 	list='$(SOURCES) $(HEADERS) $(LISP) $(TAGS_FILES)'; \

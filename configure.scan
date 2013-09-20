@@ -41,7 +41,7 @@ AC_FUNC_MALLOC
 AC_FUNC_MMAP
 AC_FUNC_REALLOC
 AC_FUNC_STRNLEN
-AC_CHECK_FUNCS([gethostbyname gethostname gettimeofday localtime_r memset munmap pow select socket strchr strtol])
+AC_CHECK_FUNCS([gethostbyname gethostname gettimeofday localtime_r memmove memset munmap pow select socket strchr strdup strtol])
 
 AC_CONFIG_FILES([Makefile])
 AC_OUTPUT
