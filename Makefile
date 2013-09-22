@@ -72,7 +72,8 @@ am_emeralddb_OBJECTS = emeralddb-pmdMain.$(OBJEXT) \
 	emeralddb-nonce.$(OBJEXT) emeralddb-ossSocket.$(OBJEXT) \
 	emeralddb-ossPrimitiveFileOp.$(OBJEXT) \
 	emeralddb-ossMmapFile.$(OBJEXT) emeralddb-pd.$(OBJEXT) \
-	emeralddb-msg.$(OBJEXT) emeralddb-dms.$(OBJEXT)
+	emeralddb-msg.$(OBJEXT) emeralddb-dms.$(OBJEXT) \
+	emeralddb-rtn.$(OBJEXT)
 emeralddb_OBJECTS = $(am_emeralddb_OBJECTS)
 emeralddb_DEPENDENCIES =
 emeralddb_LINK = $(CXXLD) $(emeralddb_CXXFLAGS) $(CXXFLAGS) \
@@ -210,7 +211,7 @@ emeralddb_SOURCES = \
    bson/src/bsonobj.cpp bson/src/util/json.cpp bson/src/oid.cpp \
    bson/src/lib/base64.cpp bson/src/lib/md5.cpp bson/src/lib/nonce.cpp \
    oss/ossSocket.cpp oss/ossPrimitiveFileOp.cpp oss/ossMmapFile.cpp \
-   pd/pd.cpp msg/msg.cpp dms/dms.cpp
+   pd/pd.cpp msg/msg.cpp dms/dms.cpp rtn/rtn.cpp
 
 edb_SOURCES = \
    client/edb.cpp client/command.cpp client/commandFactory.cpp \
@@ -361,6 +362,7 @@ include ./$(DEPDIR)/emeralddb-pmdEDUMgr.Po
 include ./$(DEPDIR)/emeralddb-pmdMain.Po
 include ./$(DEPDIR)/emeralddb-pmdOptions.Po
 include ./$(DEPDIR)/emeralddb-pmdTcpListener.Po
+include ./$(DEPDIR)/emeralddb-rtn.Po
 
 .cpp.o:
 	$(CXXCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
@@ -823,6 +825,20 @@ emeralddb-dms.obj: dms/dms.cpp
 #	source='dms/dms.cpp' object='emeralddb-dms.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(emeralddb_CXXFLAGS) $(CXXFLAGS) -c -o emeralddb-dms.obj `if test -f 'dms/dms.cpp'; then $(CYGPATH_W) 'dms/dms.cpp'; else $(CYGPATH_W) '$(srcdir)/dms/dms.cpp'; fi`
+
+emeralddb-rtn.o: rtn/rtn.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(emeralddb_CXXFLAGS) $(CXXFLAGS) -MT emeralddb-rtn.o -MD -MP -MF $(DEPDIR)/emeralddb-rtn.Tpo -c -o emeralddb-rtn.o `test -f 'rtn/rtn.cpp' || echo '$(srcdir)/'`rtn/rtn.cpp
+	$(am__mv) $(DEPDIR)/emeralddb-rtn.Tpo $(DEPDIR)/emeralddb-rtn.Po
+#	source='rtn/rtn.cpp' object='emeralddb-rtn.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(emeralddb_CXXFLAGS) $(CXXFLAGS) -c -o emeralddb-rtn.o `test -f 'rtn/rtn.cpp' || echo '$(srcdir)/'`rtn/rtn.cpp
+
+emeralddb-rtn.obj: rtn/rtn.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(emeralddb_CXXFLAGS) $(CXXFLAGS) -MT emeralddb-rtn.obj -MD -MP -MF $(DEPDIR)/emeralddb-rtn.Tpo -c -o emeralddb-rtn.obj `if test -f 'rtn/rtn.cpp'; then $(CYGPATH_W) 'rtn/rtn.cpp'; else $(CYGPATH_W) '$(srcdir)/rtn/rtn.cpp'; fi`
+	$(am__mv) $(DEPDIR)/emeralddb-rtn.Tpo $(DEPDIR)/emeralddb-rtn.Po
+#	source='rtn/rtn.cpp' object='emeralddb-rtn.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(emeralddb_CXXFLAGS) $(CXXFLAGS) -c -o emeralddb-rtn.obj `if test -f 'rtn/rtn.cpp'; then $(CYGPATH_W) 'rtn/rtn.cpp'; else $(CYGPATH_W) '$(srcdir)/rtn/rtn.cpp'; fi`
 
 ID: $(HEADERS) $(SOURCES) $(LISP) $(TAGS_FILES)
 	list='$(SOURCES) $(HEADERS) $(LISP) $(TAGS_FILES)'; \

@@ -871,8 +871,29 @@ emeralddb-pmdTcpListener.o: pmd/pmdTcpListener.cpp include/core.hpp \
  ../boost/boost/date_time/posix_time/posix_time_io.hpp \
  ../boost/boost/date_time/time_facet.hpp \
  ../boost/boost/algorithm/string/erase.hpp \
- ../boost/boost/date_time/posix_time/time_parsers.hpp \
- include/pmdEDUMgr.hpp include/pd.hpp
+ ../boost/boost/date_time/posix_time/time_parsers.hpp include/rtn.hpp \
+ bson/src/bson.h bson/src/bsonassert.h ../boost/boost/utility.hpp \
+ ../boost/boost/utility/base_from_member.hpp \
+ ../boost/boost/utility/binary.hpp \
+ ../boost/boost/preprocessor/control/deduce_d.hpp \
+ ../boost/boost/preprocessor/seq/cat.hpp \
+ ../boost/boost/preprocessor/seq/fold_left.hpp \
+ ../boost/boost/preprocessor/seq/transform.hpp \
+ ../boost/boost/preprocessor/arithmetic/mod.hpp \
+ ../boost/boost/preprocessor/arithmetic/detail/div_base.hpp \
+ ../boost/boost/preprocessor/comparison/less_equal.hpp \
+ ../boost/boost/preprocessor/logical/not.hpp \
+ ../boost/boost/utility/identity_type.hpp bson/src/stringdata.h \
+ bson/src/bsontypes.h bson/src/util/misc.h bson/src/oid.h \
+ bson/src/util/hex.h bson/src/util/builder.h \
+ bson/src/util/../inline_decls.h bson/src/bsonelement.h \
+ bson/src/util/optime.h bson/src/bsonobj.h \
+ ../boost/boost/intrusive_ptr.hpp \
+ ../boost/boost/smart_ptr/intrusive_ptr.hpp bson/src/lib/atomic_int.h \
+ bson/src/bsonmisc.h bson/src/bsonobjbuilder.h bson/src/bsonobjiterator.h \
+ bson/src/bson-inl.h bson/src/bson_db.h bson/src/util/time_support.h \
+ include/dms.hpp include/ossMmapFile.hpp include/ossPrimitiveFileOp.hpp \
+ include/dmsRecord.hpp include/pmdEDUMgr.hpp include/pd.hpp
 
 include/core.hpp:
 
@@ -2977,6 +2998,82 @@ include/ossUtil.hpp:
 ../boost/boost/algorithm/string/erase.hpp:
 
 ../boost/boost/date_time/posix_time/time_parsers.hpp:
+
+include/rtn.hpp:
+
+bson/src/bson.h:
+
+bson/src/bsonassert.h:
+
+../boost/boost/utility.hpp:
+
+../boost/boost/utility/base_from_member.hpp:
+
+../boost/boost/utility/binary.hpp:
+
+../boost/boost/preprocessor/control/deduce_d.hpp:
+
+../boost/boost/preprocessor/seq/cat.hpp:
+
+../boost/boost/preprocessor/seq/fold_left.hpp:
+
+../boost/boost/preprocessor/seq/transform.hpp:
+
+../boost/boost/preprocessor/arithmetic/mod.hpp:
+
+../boost/boost/preprocessor/arithmetic/detail/div_base.hpp:
+
+../boost/boost/preprocessor/comparison/less_equal.hpp:
+
+../boost/boost/preprocessor/logical/not.hpp:
+
+../boost/boost/utility/identity_type.hpp:
+
+bson/src/stringdata.h:
+
+bson/src/bsontypes.h:
+
+bson/src/util/misc.h:
+
+bson/src/oid.h:
+
+bson/src/util/hex.h:
+
+bson/src/util/builder.h:
+
+bson/src/util/../inline_decls.h:
+
+bson/src/bsonelement.h:
+
+bson/src/util/optime.h:
+
+bson/src/bsonobj.h:
+
+../boost/boost/intrusive_ptr.hpp:
+
+../boost/boost/smart_ptr/intrusive_ptr.hpp:
+
+bson/src/lib/atomic_int.h:
+
+bson/src/bsonmisc.h:
+
+bson/src/bsonobjbuilder.h:
+
+bson/src/bsonobjiterator.h:
+
+bson/src/bson-inl.h:
+
+bson/src/bson_db.h:
+
+bson/src/util/time_support.h:
+
+include/dms.hpp:
+
+include/ossMmapFile.hpp:
+
+include/ossPrimitiveFileOp.hpp:
+
+include/dmsRecord.hpp:
 
 include/pmdEDUMgr.hpp:
 

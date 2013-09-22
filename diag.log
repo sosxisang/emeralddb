@@ -79,3 +79,46 @@ File:pmd/pmdEDU.cpp
 Message:
 EDU 2 is forced
 
+2013-09-22-11.09.26.206147											Level:EVENT
+PID:21552                                TID:21553
+Function:pmdTcpListenerEntryPoint        Line:40
+File:pmd/pmdTcpListener.cpp
+Message:
+Listening on port_test 48127
+
+
+2013-09-22-11.11.13.658545											Level:EVENT
+PID:21552                                TID:21860
+Function:pmdProcessAgentRequest          Line:83
+File:pmd/pmdAgent.cpp
+Message:
+Insert: insertor: { _id: 1, hello: "world" }
+
+2013-09-22-11.13.46.617440											Level:EVENT
+PID:21552                                TID:21860
+Function:pmdProcessAgentRequest          Line:125
+File:pmd/pmdAgent.cpp
+Message:
+Query condition: { _id: 1 }
+
+2013-09-22-11.14.48.744853											Level:EVENT
+PID:21552                                TID:21860
+Function:pmdProcessAgentRequest          Line:83
+File:pmd/pmdAgent.cpp
+Message:
+Insert: insertor: { _id: 1, hello: "world" }
+
+2013-09-22-12.06.17.619832											Level:EVENT
+PID:21552                                TID:21860
+Function:pmdProcessAgentRequest          Line:174
+File:pmd/pmdAgent.cpp
+Message:
+Receive disconnect msg
+
+2013-09-22-12.06.21.123330											Level:EVENT
+PID:21552                                TID:21860
+Function:pmdEDUEntryPoint                Line:174
+File:pmd/pmdEDU.cpp
+Message:
+EDU 2 is forced
+
