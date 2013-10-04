@@ -1,5 +1,5 @@
-emeralddb-dms.o: dms/dms.cpp include/dms.hpp include/ossLatch.hpp \
- include/core.hpp /usr/include/unistd.h /usr/include/features.h \
+emeralddb-ixmBucket.o: ixm/ixmBucket.cpp include/core.hpp \
+ /usr/include/unistd.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/bits/predefs.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -127,9 +127,10 @@ emeralddb-dms.o: dms/dms.cpp include/dms.hpp include/ossLatch.hpp \
  /usr/include/c++/4.6/bits/locale_facets.tcc \
  /usr/include/c++/4.6/bits/basic_ios.tcc \
  /usr/include/c++/4.6/bits/ostream.tcc /usr/include/c++/4.6/istream \
- /usr/include/c++/4.6/bits/istream.tcc include/ossMmapFile.hpp \
- include/ossPrimitiveFileOp.hpp bson/src/bson.h bson/src/bsonassert.h \
- /usr/include/c++/4.6/memory /usr/include/c++/4.6/bits/stl_tempbuf.h \
+ /usr/include/c++/4.6/bits/istream.tcc include/pd.hpp include/core.hpp \
+ include/ossHash.hpp include/ixmBucket.hpp include/ossLatch.hpp \
+ bson/src/bson.h bson/src/bsonassert.h /usr/include/c++/4.6/memory \
+ /usr/include/c++/4.6/bits/stl_tempbuf.h \
  /usr/include/c++/4.6/bits/stl_raw_storage_iter.h \
  /usr/include/c++/4.6/backward/auto_ptr.h /usr/include/c++/4.6/sstream \
  /usr/include/c++/4.6/bits/sstream.tcc ../boost/boost/utility.hpp \
@@ -748,12 +749,7 @@ emeralddb-dms.o: dms/dms.cpp include/dms.hpp include/ossLatch.hpp \
  ../boost/boost/config/requires_threads.hpp \
  ../boost/boost/thread/thread_time.hpp \
  ../boost/boost/config/abi_prefix.hpp \
- ../boost/boost/config/abi_suffix.hpp include/dmsRecord.hpp \
- include/ixmBucket.hpp include/pd.hpp
-
-include/dms.hpp:
-
-include/ossLatch.hpp:
+ ../boost/boost/config/abi_suffix.hpp include/dmsRecord.hpp
 
 include/core.hpp:
 
@@ -1103,9 +1099,15 @@ include/core.hpp:
 
 /usr/include/c++/4.6/bits/istream.tcc:
 
-include/ossMmapFile.hpp:
+include/pd.hpp:
 
-include/ossPrimitiveFileOp.hpp:
+include/core.hpp:
+
+include/ossHash.hpp:
+
+include/ixmBucket.hpp:
+
+include/ossLatch.hpp:
 
 bson/src/bson.h:
 
@@ -2560,7 +2562,3 @@ bson/src/util/time_support.h:
 ../boost/boost/config/abi_suffix.hpp:
 
 include/dmsRecord.hpp:
-
-include/ixmBucket.hpp:
-
-include/pd.hpp:
